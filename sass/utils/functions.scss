@@ -1,0 +1,3 @@
+@function lightness-btn($colorOne, $colorTwo){
+    @return lighten($colorOne, 30%), lighten($colorTwo, 30%);
+}

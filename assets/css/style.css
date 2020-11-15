@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+body {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  box-shadow: 0px 9px 12px -3px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 639px) {
+  header .logo-desktop {
+    display: none;
+  }
+}
+
+body {
+  background-color: #EAEAEA;
+}
+
+.location {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 70px 15px 0;
+}
+.location > i {
+  margin-right: 20px;
+}
+.location span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.presentation {
+  background-color: #F6F6F6;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.presentation button {
+  margin-top: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 20px;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.4);
+}
+.presentation button:hover {
+  background: linear-gradient(#ae80e5, #fface8);
+  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.8);
+}
+
+.operation {
+  padding: 50px 20px;
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

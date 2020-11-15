@@ -1,0 +1,15 @@
+header{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  box-shadow: 0px 9px 12px -3px rgba(0,0,0,0.20);
+  .logo-desktop{
+    @media screen and (max-width: 639px){
+      display: none;
+    }
+  }
+
+}
