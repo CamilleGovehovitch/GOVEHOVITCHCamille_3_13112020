@@ -65,9 +65,103 @@ body {
   box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.8);
 }
 
-.operation {
-  padding: 50px 20px;
-  background-color: red;
+.nav-menu {
+  padding: 50px 20px 50px 30px;
+  background-color: #FFFFFF;
+}
+.nav-menu > h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu-container .menu__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.menu-container .menu__item .menu__number {
+  background-color: #9356DC;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 45%;
+  position: absolute;
+  left: 15px;
+}
+.menu-container .menu__item .menu__content {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 13px 17px -3px rgba(0, 0, 0, 0.25);
+}
+.menu-container .menu__item .menu__content i {
+  color: #8E8E8E;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.menu-container .menu__item .menu__content span {
+  font-weight: bold;
+}
+.menu-container .menu__item .menu__content:hover {
+  background-color: #F6EDFF;
+  box-shadow: 0px 13px 17px -3px rgba(0, 0, 0, 0.45);
+}
+.menu-container .menu__item .menu__content:hover i {
+  color: #9356DC;
+}
+
+.restaurant {
+  padding: 50px 20px 50px 30px;
+}
+.restaurant h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.restaurant .restaurant__item {
+  box-shadow: 0px 13px 17px -3px rgba(0, 0, 0, 0.45);
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.restaurant .restaurant__item .restaurant__bck {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px 30px 0 0;
+}
+.restaurant .restaurant__item .la-palette {
+  background-image: url("../../assets/img/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.restaurant .restaurant__item .la-note {
+  background-image: url("../../assets/img/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.restaurant .restaurant__item .restaurant__content {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 0 0 30px 30px;
+}
+.restaurant .restaurant__item .restaurant__content ul li {
+  margin-bottom: 10px;
+}
+.restaurant .restaurant__item .restaurant__content ul li:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+.restaurant .restaurant__item .restaurant__content i {
+  font-size: 20px;
+}
+.restaurant .restaurant__item .restaurant__content i:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

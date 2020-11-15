@@ -1,0 +1,42 @@
+.restaurant{
+  @include general-padding;
+  h2{
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .restaurant__item{
+    box-shadow: 0px 13px 17px -3px rgba(0,0,0,0.45);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    .restaurant__bck{
+      @include restaurant__bck;
+    }
+    .la-palette{
+      background-image: url("../../assets/img/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
+    .la-note{
+      background-image: url("../../assets/img/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg");
+    }
+    .restaurant__content{
+      @include restaurant__content;
+      border-radius: 0 0 30px 30px;
+      ul{
+        li{
+          margin-bottom: 10px;
+        }
+        li:first-child{
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+      i{
+        font-size: 20px;
+        &:hover{
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
