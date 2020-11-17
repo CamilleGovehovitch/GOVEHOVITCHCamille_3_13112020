@@ -1,0 +1,38 @@
+footer{
+  background-color: #353535;
+  padding: 20px 0 30px 20px;
+  h2{
+    font-family: "Shrikhand", cursive;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  ul{
+    li{
+      margin-bottom: 15px;
+      a{
+        font-family: $roboto;
+        text-decoration: none;
+        color: white;
+      }
+    }
+    li:first-child{
+      a{
+        i{
+        }
+        span{
+          margin-left: 18px;
+        }
+      }
+    }
+    li:nth-child(1n){
+      a{
+        i{
+        }
+        span{
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
