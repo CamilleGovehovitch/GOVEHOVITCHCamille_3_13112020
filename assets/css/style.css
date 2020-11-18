@@ -24,6 +24,30 @@ header {
   }
 }
 
+.header__menu {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  box-shadow: none;
+}
+.header__menu .header__menu-back-link {
+  width: 10%;
+  text-align: center;
+}
+.header__menu .header__menu-back-link a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.header__menu .header__menu-logos {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
 body {
   background-color: #EAEAEA;
 }
@@ -130,7 +154,6 @@ body {
   width: 100%;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0px 13px 17px -3px rgba(0, 0, 0, 0.25);
 }
 .menu-container .menu__item a .menu__content i {
   color: #8E8E8E;
@@ -311,6 +334,41 @@ footer ul li:first-child a span {
 }
 footer ul li:nth-child(1n) a span {
   margin-left: 5px;
+}
+
+.menu__thumbnail {
+  background-image: url("../../assets/img/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: -15px;
+  height: 600px;
+  width: 100%;
+  margin-bottom: -40px;
+}
+
+.menu__container {
+  padding: 40px 20px;
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+}
+.menu__container .menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__container .menu__title h1 {
+  font-size: 4em;
+  font-family: "Shrikhand", cursive;
+}
+.menu__container .menu__title i {
+  font-size: 4em;
+}
+.menu__container .menu__entree h2:after {
+  content: "";
+  display: block;
+  width: 5%;
+  padding-top: 5px;
+  border-bottom: 1px solid #99e2d1;
 }
 
 /*# sourceMappingURL=style.css.map */
