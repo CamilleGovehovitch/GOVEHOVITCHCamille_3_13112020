@@ -59,6 +59,7 @@
           i{
             font-size: 20px;
             color: #F6F6F6;
+            transition: color 400ms ease-in-out;
             &:hover{
               color: $color-primary;
             }

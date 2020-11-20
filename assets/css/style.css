@@ -283,6 +283,7 @@ body {
 .restaurant .restaurant__container .restaurant__item a .restaurant__content i {
   font-size: 20px;
   color: #F6F6F6;
+  transition: color 400ms ease-in-out;
 }
 .restaurant .restaurant__container .restaurant__item a .restaurant__content i:hover {
   color: #9356DC;
