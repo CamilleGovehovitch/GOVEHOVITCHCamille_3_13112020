@@ -95,30 +95,30 @@ body {
   box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.8);
 }
 
-.nav-menu {
+.operation-menu {
   padding: 50px 20px 50px 30px;
   background-color: #FFFFFF;
 }
-.nav-menu > h2 {
+.operation-menu > h2 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.menu-container .menu__item {
+.operation-container .operation__item {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
 }
-.menu-container .menu__item a {
+.operation-container .operation__item a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: black;
   width: 100%;
 }
-.menu-container .menu__item a .menu__number {
+.operation-container .operation__item a .operation__number {
   background-color: #9356DC;
   color: #FFFFFF;
   padding: 10px;
@@ -127,83 +127,84 @@ body {
   left: 15px;
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .menu-container .menu__item a .menu__number {
+  .operation-container .operation__item a .operation__number {
     position: relative;
     left: 175px;
     bottom: 30px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
-  .menu-container .menu__item a .menu__number {
+  .operation-container .operation__item a .operation__number {
     position: relative;
     left: 275px;
     bottom: 30px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .menu-container .menu__item a .menu__number {
+  .operation-container .operation__item a .operation__number {
     position: relative;
     left: 350px;
     bottom: 30px;
   }
 }
-.menu-container .menu__item a .menu__content {
+.operation-container .operation__item a .operation__content {
   display: flex;
   align-items: center;
   background-color: #F6F6F6;
   width: 100%;
   border-radius: 15px;
   padding: 20px;
+  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.2);
 }
-.menu-container .menu__item a .menu__content i {
+.operation-container .operation__item a .operation__content i {
   color: #8E8E8E;
   font-size: 20px;
   padding-left: 20px;
   margin-right: 20px;
 }
-.menu-container .menu__item a .menu__content span {
+.operation-container .operation__item a .operation__content span {
   font-weight: bold;
 }
-.menu-container .menu__item a .menu__content:hover {
+.operation-container .operation__item a .operation__content:hover {
   background-color: #F6EDFF;
   box-shadow: 0px 13px 17px -3px rgba(0, 0, 0, 0.45);
 }
-.menu-container .menu__item a .menu__content:hover i {
+.operation-container .operation__item a .operation__content:hover i {
   color: #9356DC;
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .menu-container .menu__item a .menu__content {
+  .operation-container .operation__item a .operation__content {
     width: 300px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
-  .menu-container .menu__item a .menu__content {
+  .operation-container .operation__item a .operation__content {
     width: 500px;
     justify-content: center;
   }
 }
 @media screen and (min-width: 1920px) {
-  .menu-container .menu__item a .menu__content {
+  .operation-container .operation__item a .operation__content {
     width: 700px;
     justify-content: center;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .menu-container {
+  .operation-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
-  .menu-container {
+  .operation-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 @media screen and (min-width: 1920px) {
-  .menu-container {
+  .operation-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -337,7 +338,6 @@ footer ul li:nth-child(1n) a span {
 }
 
 .menu__thumbnail {
-  background-image: url("../../assets/img/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-position: center;
   margin-top: -15px;
@@ -347,7 +347,7 @@ footer ul li:nth-child(1n) a span {
 }
 
 .menu__container {
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
   background-color: #F6F6F6;
   border-radius: 30px 30px 0 0;
 }
@@ -355,20 +355,96 @@ footer ul li:nth-child(1n) a span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 .menu__container .menu__title h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-family: "Shrikhand", cursive;
 }
 .menu__container .menu__title i {
-  font-size: 4em;
+  font-size: 3em;
 }
-.menu__container .menu__entree h2:after {
+.menu__container .menu {
+  margin-bottom: 40px;
+}
+.menu__container .menu h2 {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+.menu__container .menu h2:after {
   content: "";
   display: block;
   width: 5%;
   padding-top: 5px;
-  border-bottom: 1px solid #99e2d1;
+  border-bottom: 5px solid #99e2d1;
+}
+.menu__container .menu .menu__item {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 15px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+.menu__container .menu .menu__item .menu__item-content ul li {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.menu__container .menu .menu__item .menu__item-content ul li:first-child {
+  font-weight: bold;
+  font-size: 24px;
+}
+.menu__container .menu .menu__item .menu__item-price {
+  display: flex;
+  align-items: flex-end;
+}
+.menu__container .menu .menu__item .menu__item-price span {
+  font-weight: bold;
+}
+.menu__container .menu .menu__item:hover {
+  background-color: #F6EDFF;
+  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 20px;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+}
+.btn button:hover {
+  background: linear-gradient(#ae80e5, #fface8);
+  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.8);
+}
+
+.sens {
+  background-image: url("../../assets/img/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.francaise {
+  background-image: url("../../assets/img/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.palette {
+  background-image: url("../../assets/img/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.note {
+  background-image: url("../../assets/img/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

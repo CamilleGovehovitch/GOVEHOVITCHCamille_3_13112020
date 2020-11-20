@@ -22,8 +22,9 @@
   width: 100%;
   border-radius: 15px;
   padding: 20px;
+  box-shadow: 10px 9px 12px -3px rgba(0,0,0,0.20);
 }
-@mixin menu__number{
+@mixin operation__number{
   background-color: $color-primary;
   color: #FFFFFF;
   padding: 10px;
@@ -46,7 +47,6 @@
   padding: 15px 20px;
 }
 @mixin menu__thumbnail{
-  background-image: url("../../assets/img/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-position: center;
   margin-top: -15px;
@@ -55,7 +55,17 @@
   margin-bottom: -40px;
 }
 @mixin menu__container-setup{
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
   background-color: #F6F6F6;
   border-radius: 30px 30px 0 0;
+}
+@mixin menu__item{
+  background-color: #FFFFFF;
+  font-family: $roboto;
+  padding: 15px 15px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 10px 9px 12px -3px rgba(0,0,0,0.20);
+  margin-bottom: 15px;
 }

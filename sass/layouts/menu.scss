@@ -1,0 +1,76 @@
+.menu__thumbnail{
+  @include menu__thumbnail;
+}
+.menu__container{
+  @include menu__container-setup;
+  .menu__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    h1{
+      font-size: 3em;
+      font-family: "Shrikhand", cursive;
+    }
+    i{
+      font-size: 3em;
+    }
+  }
+  .menu{
+    margin-bottom: 40px;
+    h2{
+      margin-bottom: 30px;
+      font-family: $roboto;
+      font-size: 24px;
+      &:after{
+        content: "";
+        display: block;
+        width: 5%;
+        padding-top: 5px;
+        border-bottom: 5px solid #99e2d1;
+      }
+    }
+    .menu__item{
+      @include menu__item;
+      .menu__item-content{
+        ul{
+          li{
+            margin-bottom: 10px;
+            font-family: $roboto;
+            font-weight: lighter;
+            font-size: 20px;
+          }
+          li:first-child{
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+      .menu__item-price{
+        display: flex;
+        align-items: flex-end;
+        span{
+          font-weight: bold;
+        }
+      }
+      &:hover{
+        background-color: #F6EDFF;
+        box-shadow: 10px 9px 12px -3px rgba(0,0,0,0.40);
+      }
+    }
+  }
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  button{
+    @include button-style;
+    letter-spacing: 1px;
+    padding: 20px 40px;
+    margin-bottom: 50px;
+    &:hover{
+      background: linear-gradient(lighten($color-primary, 10%), lighten($color-secondary, 10%));
+      box-shadow: 10px 9px 12px -3px rgba(0,0,0,0.80);
+    }
+  }
+}
