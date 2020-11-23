@@ -9,11 +9,11 @@
     align-items: center;
     margin-bottom: 40px;
     h1{
-      font-size: 3em;
+      font-size: 25px;
       font-family: "Shrikhand", cursive;
     }
     i{
-      font-size: 3em;
+      font-size: 25px;
     }
   }
   .menu{
@@ -21,11 +21,11 @@
     h2{
       margin-bottom: 30px;
       font-family: $roboto;
-      font-size: 24px;
+      font-size: 20px;
       &:after{
         content: "";
         display: block;
-        width: 5%;
+        width: 20%;
         padding-top: 5px;
         border-bottom: 5px solid #99e2d1;
       }
@@ -38,17 +38,18 @@
             margin-bottom: 10px;
             font-family: $roboto;
             font-weight: lighter;
-            font-size: 20px;
+            font-size: 15px;
           }
           li:first-child{
             font-weight: bold;
-            font-size: 24px;
+            font-size: 16px;
           }
         }
       }
       .menu__item-price{
         display: flex;
         align-items: flex-end;
+        margin-bottom: 10px;
         span{
           font-weight: bold;
         }

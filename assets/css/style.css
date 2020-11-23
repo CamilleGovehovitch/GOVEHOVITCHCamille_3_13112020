@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px 10px;
   margin-bottom: 15px;
   box-shadow: 0px 9px 12px -3px rgba(0, 0, 0, 0.2);
 }
@@ -29,7 +29,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px 10px;
   margin-bottom: 15px;
   box-shadow: none;
 }
@@ -342,7 +342,7 @@ footer ul li:nth-child(1n) a span {
   background-size: cover;
   background-position: center;
   margin-top: -15px;
-  height: 600px;
+  padding: 200px 50px;
   width: 100%;
   margin-bottom: -40px;
 }
@@ -359,11 +359,11 @@ footer ul li:nth-child(1n) a span {
   margin-bottom: 40px;
 }
 .menu__container .menu__title h1 {
-  font-size: 3em;
+  font-size: 25px;
   font-family: "Shrikhand", cursive;
 }
 .menu__container .menu__title i {
-  font-size: 3em;
+  font-size: 25px;
 }
 .menu__container .menu {
   margin-bottom: 40px;
@@ -371,12 +371,12 @@ footer ul li:nth-child(1n) a span {
 .menu__container .menu h2 {
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
 }
 .menu__container .menu h2:after {
   content: "";
   display: block;
-  width: 5%;
+  width: 20%;
   padding-top: 5px;
   border-bottom: 5px solid #99e2d1;
 }
@@ -394,15 +394,16 @@ footer ul li:nth-child(1n) a span {
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
 }
 .menu__container .menu .menu__item .menu__item-content ul li:first-child {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
 }
 .menu__container .menu .menu__item .menu__item-price {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 10px;
 }
 .menu__container .menu .menu__item .menu__item-price span {
   font-weight: bold;
