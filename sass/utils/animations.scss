@@ -1,8 +1,8 @@
 .loader-container{
   width:100% ;
-  height: 100vh;
+  height: 100%;
   background-color: $color-tertiary;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,9 @@
     animation: spinLoader 3500ms ease-in-out 150ms infinite;
   }
 }
+.super-container{
+  animation: super 2000ms ease-in-out forwards;
+}
 @keyframes spinLoader {
   0%{
     transform: rotate(0deg);
@@ -30,14 +33,16 @@
 @keyframes spinLoader-container{
   0%{
     opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 2;
   }
   100%{
     opacity: 0;
-    display: none;
     z-index: -1;
+  }
+}
+@keyframes super {
+  0%{
+  }
+  100%{
   }
 }
