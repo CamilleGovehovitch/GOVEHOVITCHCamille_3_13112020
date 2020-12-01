@@ -45,7 +45,7 @@
       }
       .menu__item{
         @include menu__item;
-        animation: translateMenu 500ms ease-in-out backwards;
+        animation: translateMenu 700ms ease-in-out backwards;
         animation-delay: 3200ms;
         .menu__item-content{
           ul{
