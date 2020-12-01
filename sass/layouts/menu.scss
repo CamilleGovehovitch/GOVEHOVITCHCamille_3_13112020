@@ -16,48 +16,76 @@
       font-size: 25px;
     }
   }
-  .menu{
-    margin-bottom: 40px;
-    h2{
-      margin-bottom: 30px;
-      font-family: $roboto;
-      font-size: 20px;
-      &:after{
-        content: "";
-        display: block;
-        width: 20%;
-        padding-top: 5px;
-        border-bottom: 5px solid #99e2d1;
+  .menu__super-container{
+    .menu{
+      margin-bottom: 40px;
+      h2{
+        margin-bottom: 30px;
+        font-family: $roboto;
+        font-size: 20px;
+        &:after{
+          content: "";
+          display: block;
+          width: 20%;
+          padding-top: 5px;
+          border-bottom: 5px solid #99e2d1;
+          @media screen and (min-width: 768px) and (max-width: 1023px){
+            width: 8%;
+          }
+          @media screen and (min-width: 1024px) and (max-width: 1439px){
+            width: 6%;
+          }
+          @media screen and (min-width: 1440px) and (max-width: 2559px) {
+            width: 4%;
+          }
+          @media screen and (min-width: 1440px){
+            width: 10%;
+          }
+        }
+      }
+      .menu__item{
+        @include menu__item;
+        animation: translateMenu 500ms ease-in-out backwards;
+        animation-delay: 3200ms;
+        .menu__item-content{
+          ul{
+            li{
+              margin-bottom: 10px;
+              font-family: $roboto;
+              font-weight: lighter;
+              font-size: 15px;
+            }
+            li:first-child{
+              font-weight: bold;
+              font-size: 16px;
+            }
+            @media screen and (min-width: 1920px){
+              li{
+                font-size: 30px;
+              }
+              li:first-child{
+                font-size: 30px;
+              }
+            }
+          }
+        }
+        .menu__item-price{
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 10px;
+          span{
+            font-weight: bold;
+          }
+        }
+        &:hover{
+          background-color: #F6EDFF;
+          box-shadow: 10px 9px 12px -3px rgba(0,0,0,0.40);
+        }
       }
     }
-    .menu__item{
-      @include menu__item;
-      .menu__item-content{
-        ul{
-          li{
-            margin-bottom: 10px;
-            font-family: $roboto;
-            font-weight: lighter;
-            font-size: 15px;
-          }
-          li:first-child{
-            font-weight: bold;
-            font-size: 16px;
-          }
-        }
-      }
-      .menu__item-price{
-        display: flex;
-        align-items: flex-end;
-        margin-bottom: 10px;
-        span{
-          font-weight: bold;
-        }
-      }
-      &:hover{
-        background-color: #F6EDFF;
-        box-shadow: 10px 9px 12px -3px rgba(0,0,0,0.40);
-      }
+    @media screen and (min-width: 1920px){
+      display: flex;
+      justify-content: space-around;
     }
   }
 }

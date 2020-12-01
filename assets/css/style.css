@@ -44,7 +44,16 @@
     z-index: -1;
   }
 }
-@keyframes super {}
+@keyframes translateMenu {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   box-sizing: border-box;
 }
@@ -336,14 +345,7 @@ body {
     width: 600px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
-  .restaurant .restaurant__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .restaurant .restaurant__container {
     display: flex;
     flex-wrap: wrap;
@@ -403,22 +405,42 @@ footer ul li:nth-child(1n) a span {
 .menu__container .menu__title i {
   font-size: 25px;
 }
-.menu__container .menu {
+.menu__container .menu__super-container .menu {
   margin-bottom: 40px;
 }
-.menu__container .menu h2 {
+.menu__container .menu__super-container .menu h2 {
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
-.menu__container .menu h2:after {
+.menu__container .menu__super-container .menu h2:after {
   content: "";
   display: block;
   width: 20%;
   padding-top: 5px;
   border-bottom: 5px solid #99e2d1;
 }
-.menu__container .menu .menu__item {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu__container .menu__super-container .menu h2:after {
+    width: 8%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .menu__container .menu__super-container .menu h2:after {
+    width: 6%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .menu__container .menu__super-container .menu h2:after {
+    width: 4%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu__container .menu__super-container .menu h2:after {
+    width: 10%;
+  }
+}
+.menu__container .menu__super-container .menu .menu__item {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   padding: 15px 15px 5px 15px;
@@ -427,28 +449,44 @@ footer ul li:nth-child(1n) a span {
   border-radius: 10px;
   box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
+  animation: translateMenu 500ms ease-in-out backwards;
+  animation-delay: 3200ms;
 }
-.menu__container .menu .menu__item .menu__item-content ul li {
+.menu__container .menu__super-container .menu .menu__item .menu__item-content ul li {
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 15px;
 }
-.menu__container .menu .menu__item .menu__item-content ul li:first-child {
+.menu__container .menu__super-container .menu .menu__item .menu__item-content ul li:first-child {
   font-weight: bold;
   font-size: 16px;
 }
-.menu__container .menu .menu__item .menu__item-price {
+@media screen and (min-width: 1920px) {
+  .menu__container .menu__super-container .menu .menu__item .menu__item-content ul li {
+    font-size: 30px;
+  }
+  .menu__container .menu__super-container .menu .menu__item .menu__item-content ul li:first-child {
+    font-size: 30px;
+  }
+}
+.menu__container .menu__super-container .menu .menu__item .menu__item-price {
   display: flex;
   align-items: flex-end;
   margin-bottom: 10px;
 }
-.menu__container .menu .menu__item .menu__item-price span {
+.menu__container .menu__super-container .menu .menu__item .menu__item-price span {
   font-weight: bold;
 }
-.menu__container .menu .menu__item:hover {
+.menu__container .menu__super-container .menu .menu__item:hover {
   background-color: #F6EDFF;
   box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 1920px) {
+  .menu__container .menu__super-container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .btn {
