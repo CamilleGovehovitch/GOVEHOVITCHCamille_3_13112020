@@ -435,7 +435,7 @@ footer ul li:nth-child(1n) a span {
     width: 4%;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2560px) {
   .menu__container .menu__super-container .menu h2:after {
     width: 10%;
   }
@@ -443,24 +443,35 @@ footer ul li:nth-child(1n) a span {
 .menu__container .menu__super-container .menu .menu__item {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
-  padding: 15px 15px 5px 15px;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
   box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
-  animation: translateMenu 500ms ease-in-out backwards;
-  animation-delay: 3200ms;
+  animation: translateMenu 700ms ease-in-out 3200ms backwards;
+  overflow: hidden;
+}
+.menu__container .menu__super-container .menu .menu__item .menu__item-content {
+  width: 90%;
+  transition: width 1500ms ease-in-out;
+  padding: 15px 15px 5px 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__container .menu__super-container .menu .menu__item .menu__item-content ul {
+  white-space: nowrap;
 }
 .menu__container .menu__super-container .menu .menu__item .menu__item-content ul li {
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  font-size: 15px;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__container .menu__super-container .menu .menu__item .menu__item-content ul li:first-child {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 @media screen and (min-width: 1920px) {
   .menu__container .menu__super-container .menu .menu__item .menu__item-content ul li {
@@ -471,16 +482,66 @@ footer ul li:nth-child(1n) a span {
   }
 }
 .menu__container .menu__super-container .menu .menu__item .menu__item-price {
+  width: 10%;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   margin-bottom: 10px;
+  padding: 15px 15px 5px 15px;
 }
 .menu__container .menu__super-container .menu .menu__item .menu__item-price span {
   font-weight: bold;
 }
-.menu__container .menu__super-container .menu .menu__item:hover {
-  background-color: #F6EDFF;
-  box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.4);
+.menu__container .menu__super-container .menu .menu__item .menu__item-check {
+  background-color: #99E2D0;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1500ms ease-in-out;
+}
+.menu__container .menu__super-container .menu .menu__item .menu__item-check .menu__item-valid {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(35px) rotate(0);
+  transition: all 1500ms ease-in-out;
+}
+.menu__container .menu__super-container .menu .menu__item .menu__item-check .menu__item-valid i {
+  color: #99E2D0;
+  font-size: 16px;
+}
+.menu__container .menu__super-container .menu .menu__item:hover .menu__item-content {
+  width: 55%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__container .menu__super-container .menu .menu__item:hover .menu__item-content ul {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__container .menu__super-container .menu .menu__item:hover .menu__item-content ul li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__container .menu__super-container .menu .menu__item:hover .menu__item-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.menu__container .menu__super-container .menu .menu__item:hover .menu__item-check .menu__item-valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translateX(0) rotate(360deg);
 }
 @media screen and (min-width: 1920px) {
   .menu__container .menu__super-container {
@@ -522,7 +583,7 @@ footer ul li:nth-child(1n) a span {
 }
 
 .note {
-  background-image: url("../../assets/img/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../../assets/img/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
