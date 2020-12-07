@@ -143,6 +143,7 @@ body {
   border-radius: 30px;
   color: white;
   box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .presentation button:hover {
   background: linear-gradient(#ae80e5, #fface8);
@@ -187,7 +188,7 @@ body {
     bottom: 30px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
   .operation-container .operation__item a .operation__number {
     position: relative;
     left: 275px;
@@ -404,6 +405,10 @@ footer ul li:nth-child(1n) a span {
 }
 .menu__container .menu__title i {
   font-size: 25px;
+  transition: color 400ms ease-in-out;
+}
+.menu__container .menu__title i:hover {
+  color: #9356DC;
 }
 .menu__container .menu__super-container .menu {
   margin-bottom: 40px;
@@ -544,6 +549,13 @@ footer ul li:nth-child(1n) a span {
   transform: translateX(0) rotate(360deg);
 }
 @media screen and (min-width: 1920px) {
+  .menu__container .menu__super-container .menu .menu__item {
+    width: 550px;
+    height: 130px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1920px) {
   .menu__container .menu__super-container {
     display: flex;
     justify-content: space-around;
@@ -561,6 +573,7 @@ footer ul li:nth-child(1n) a span {
   border-radius: 30px;
   color: white;
   box-shadow: 10px 9px 12px -3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
   letter-spacing: 1px;
   padding: 20px 40px;
   margin-bottom: 50px;

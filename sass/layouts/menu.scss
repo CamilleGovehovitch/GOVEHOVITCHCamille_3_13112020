@@ -14,6 +14,10 @@
     }
     i{
       font-size: 25px;
+      transition: color 400ms ease-in-out;
+      &:hover{
+        color: $color-primary;
+      }
     }
   }
   .menu__super-container{
@@ -141,6 +145,11 @@
               transform: translateX(0) rotate(360deg);
             }
           }
+        }
+        @media screen and (min-width: 1920px){
+          width: 550px;
+          height: 130px;
+          align-items: center;
         }
       }
     }
