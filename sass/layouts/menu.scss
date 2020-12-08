@@ -96,7 +96,6 @@
         .menu__item-check{
           background-color: $color-tertiary;
           width: 0;
-          height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -115,6 +114,9 @@
               color: $color-tertiary;
               font-size: 16px;
             }
+          }
+          @media screen and (min-width: 2560px){
+            height: 100%;
           }
         }
         &:hover{
@@ -136,7 +138,9 @@
             justify-content: center;
             align-items: center;
             width: 25%;
-            height: 100%;
+            @media screen and (min-width: 2560px){
+              height: 100%;
+            }
             .menu__item-valid{
               display: flex;
               justify-content: center;
