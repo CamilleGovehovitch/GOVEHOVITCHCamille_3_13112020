@@ -500,6 +500,7 @@ footer ul li:nth-child(1n) a span {
 .menu__container .menu__super-container .menu .menu__item .menu__item-check {
   background-color: #99E2D0;
   width: 0;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
