@@ -94,22 +94,9 @@
           }
         }
         .menu__item-check{
-          background-color: $color-tertiary;
-          width: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: all 1500ms ease-in-out;
+          @include menu__item-check;
           .menu__item-valid{
-            background-color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: translateX(35px) rotate(0);
-            transition: all 1500ms ease-in-out ;
+            @include menu__item-valid;
             i{
               color: $color-tertiary;
               font-size: 16px;

@@ -15,14 +15,21 @@
         text-decoration: none;
         color: black;
         .restaurant__bck{
-          @include restaurant__bck;
+          height: 180px;
+          box-sizing: border-box;
+          position: relative;
+          img{
+            @include restaurant__bck;
+          }
           @media screen and (min-width: 1920px){
             height: 350px;
           }
           .restaurant__new{
             display: flex;
-            padding: 20px;
             justify-content: flex-end;
+            position: absolute;
+            top: 20px;
+            right: 30px;
             span{
               background-color: #99E2D1;
               color: darken(#58B69D, 20%);
@@ -31,18 +38,6 @@
               border-radius: 5px;
             }
           }
-        }
-        .la-palette{
-          background-image: url("../../assets/img/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-        }
-        .la-note{
-          background-image: url("../../assets/img/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg");
-        }
-        .la-française{
-          background-image: url("../../assets/img/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-        }
-        .la-folie{
-          background-image: url("../../assets/img/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
         }
         .restaurant__content{
           @include restaurant__content;
