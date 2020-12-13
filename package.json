@@ -4,11 +4,14 @@
   "description": "ohmyfood est une entreprise de commande de plat gastronomique",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./assets/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./assets/css/style.css --style compressed",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
+
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.29.0"
-  }
+  },
+  "browserslist": "last 4 versions"
 }
