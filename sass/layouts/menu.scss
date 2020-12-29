@@ -64,13 +64,29 @@
               margin-bottom: 10px;
               font-family: $roboto;
               font-weight: lighter;
-              font-size: 13px;
+              font-size: 10px;
               text-overflow: ellipsis;
               overflow: hidden;
             }
             li:first-child{
               font-weight: bold;
-              font-size: 15px;
+              font-size: 12px;
+            }
+            @media screen and (min-width: 640px) and (max-width: 1023px){
+              li{
+                font-size: 15px;
+              }
+              li:first-child{
+                font-size: 15px;
+              }
+            }
+            @media screen and (min-width: 1024px) and (max-width: 1919px){
+              li{
+                font-size: 20px;
+              }
+              li:first-child{
+                font-size: 20px;
+              }
             }
             @media screen and (min-width: 1920px){
               li{
@@ -102,7 +118,7 @@
               font-size: 16px;
             }
           }
-          @media screen and (min-width: 2560px){
+          @media screen and (min-width: 1920px){
             height: 100%;
           }
         }
@@ -119,13 +135,26 @@
                 overflow: hidden;
               }
             }
-          }
+              @media screen and (min-width: 640px) and (max-width: 1023px) {
+                width: 55%;
+              }
+              @media screen and (min-width: 1024px) and (max-width: 1919px) {
+                width: 60%;
+              }
+            }
           .menu__item-check{
             display: flex;
             justify-content: center;
             align-items: center;
             width: 25%;
+            @media screen and (min-width: 640px) and (max-width: 1023px){
+              width: 15%;
+            }
+            @media screen and (min-width: 1024px) and (max-width: 1919px){
+              width: 10%;
+            }
             @media screen and (min-width: 1920px){
+              width: 20%;
               height: 100%;
             }
             .menu__item-valid{
@@ -140,7 +169,7 @@
           }
         }
         @media screen and (min-width: 1920px){
-          width: 550px;
+          width: 620px;
           height: 130px;
           align-items: center;
         }
